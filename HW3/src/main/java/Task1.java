@@ -31,12 +31,14 @@ public class Task1 {
 	}
 
 	public static ArrayList<Integer> oddList(ArrayList<Integer> arrLst) {
+		ArrayList<Integer> newArr = new ArrayList<>();
+
 		for (int i = 0; i < arrLst.size(); i++) {
-			if (arrLst.get(i) % 2 == 0) {
-				arrLst.remove(arrLst.get(i));
+			if (arrLst.get(i) % 2 != 0) {
+				newArr.add(arrLst.get(i));
 			}
 		}
-		return arrLst;
+		return newArr;
 	}
 
 	public static int average(ArrayList<Integer> arrLst) {
