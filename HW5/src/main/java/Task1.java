@@ -6,7 +6,7 @@ public class Task1 {
     public static Integer id = 1;
     public static String name;
     public static String surname;
-    public static Integer phone;
+    public static String phone;
 
     public static Scanner sc = new Scanner(System.in);
 
@@ -28,7 +28,7 @@ public class Task1 {
         newContact.add(surname);
 
         System.out.println("Введите номер телефона:");
-        phone = sc.nextInt();
+        phone = sc.nextLine();
         newContact.add(phone);
 
         return newContact;
